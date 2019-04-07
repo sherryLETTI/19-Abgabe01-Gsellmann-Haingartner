@@ -14,7 +14,13 @@ public class CalculatorImpl implements Calculator{
     }
 
     public int getMinimum(){
-        return 0;
+        temp = valueArray.get(0);
+        for(int i = 0; i < valueArray.size()-1; i++){
+            if(temp > valueArray.get(i)){
+                temp = valueArray.get(i);
+            }
+        }
+        return temp;
     }
 
     public void addValue(int value){

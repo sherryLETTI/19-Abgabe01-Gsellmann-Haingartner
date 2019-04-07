@@ -10,9 +10,12 @@ public class Main {
 		calc.addValue(16);
 		
 		// add other integers
-		
+		calc.addValue(99);
+		calc.addValue(54);
+		calc.addValue(7);
+
 		// output lowest number 
-		
+		System.out.println(calc.getMinimum());
 		// output highest number
 		
 		// output sum of all numbers
