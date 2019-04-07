@@ -6,12 +6,16 @@ public class CalculatorImpl implements Calculator{
     private int temp = 0;
 
     public int sum(){
-        return 0;
+        int sum = 0;
+        for(int i = 0; i < valueArray.size(); i++){
+            sum += valueArray.get(i);
+        }
+        return sum;
     }
 
     public int getMaximum(){
         temp = valueArray.get(0);
-        for(int i = 0; i < valueArray.size()-1; i++){
+        for(int i = 0; i < valueArray.size(); i++){
             if(temp < valueArray.get(i)){
                 temp = valueArray.get(i);
             }
@@ -21,7 +25,7 @@ public class CalculatorImpl implements Calculator{
 
     public int getMinimum(){
         temp = valueArray.get(0);
-        for(int i = 0; i < valueArray.size()-1; i++){
+        for(int i = 0; i < valueArray.size(); i++){
             if(temp > valueArray.get(i)){
                 temp = valueArray.get(i);
             }

@@ -19,7 +19,7 @@ public class Main {
 		// output highest number
 		System.out.println(calc.getMaximum());
 		// output sum of all numbers
-
+        System.out.println(calc.sum());
 	}
 
 }
