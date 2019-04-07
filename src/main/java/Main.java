@@ -17,7 +17,7 @@ public class Main {
 		// output lowest number 
 		System.out.println(calc.getMinimum());
 		// output highest number
-		
+		System.out.println(calc.getMaximum());
 		// output sum of all numbers
 
 	}
